@@ -64,3 +64,39 @@ body {
 #paper{
     width: auto;
 }
+
+/* Styling for sub-links in the sidebar */
+.sidebar .sub-link {
+    padding-left: 30px; /* Indent sub-links for visual hierarchy */
+    font-size: 16px; /* Slightly smaller font size for sub-links */
+}
+
+/* Styling for the references section */
+#references {
+    padding: 20px;
+    background-color: #e7eff6; /* Light blue background for the references section */
+    border-radius: 5px; /* Rounded corners for the references section */
+    margin-top: 20px; /* Space before the references section */
+}
+
+#references h2 {
+    color: #002f4b; /* Dark blue for the references section header */
+}
+
+#references ol {
+    padding-left: 20px; /* Proper padding for ordered list */
+}
+
+#references li {
+    padding-bottom: 5px; /* Space between reference items */
+}
+
+/* Additional CSS for clickable reference links within the content */
+a.reference-link {
+    color: #004f72; /* Dark blue for reference links */
+    text-decoration: none; /* No underline */
+}
+
+a.reference-link:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
