@@ -57,8 +57,17 @@ body {
     margin-bottom: 15px; /* Spacing below headers */
     text-align: center;
 }
+.sub-section-header {
+    color: black; /* Dark blue for headers */
+    margin-bottom: 15px; /* Spacing below headers */
+    text-align: left;
+}
+
 .blockquote {
+    background-color: #f5f5f5;
     border-left: 5px solid #004f72; /* Accent color on blockquote */
+    padding: 15px; /* Adjust the value as needed */
+    margin: 15px 0; /* To add space around the blockquote itself */
 }
 
 #paper{
