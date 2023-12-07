@@ -11,14 +11,15 @@
 </head>
 <body>
 
-    <section>
+<section>
         <div class="title-page">
-            <img src="UBC_Logo.png" alt="University Logo">
+            <img src="images\UBC_Logo.png" alt="University Logo" class="university-logo">
+            <img src="images/title_pic.jpg" alt="Title Picture" class="title-picture">
             <h1 class="title">Mitigating the Issue of High School Dropout in British Columbia</h1>
             <p class="author">Kamran Ismayilov</p>
-            <p class="institution">The University of British Columbia</p>
+            <!-- <p class="institution">The University of British Columbia</p> -->
         </div>
-    </section>
+</section>
     
 <!-- Navbar -->
 <div class="sidebar">
@@ -39,6 +40,18 @@
         <a href="#economy" class="sub-link">2.3 Damage to Canadian Economy</a>
     
     <a href="#reasons">3. Reasons behind high school dropout</a>
+        <a href="learning-needs" class="sub-link">3.1 Learning needs and dropout</a>
+    
+    <a href="#identification">4. Identifying learning needs</a>
+        <a href="#assessment" class="sub-link">4.1 Self-assessment</a>
+        <a href="#identification" class="sub-link">4.2 Identification by teachers</a>
+    
+    <a href="#addressing">5. Addressing learning needs</a>
+        <a href="#universal-design" class="sub-link">5.1 Universal Design</a>
+        <a href="#differentiated-instruction" class="sub-link">5.2 Differentiated Instruction</a>
+        <a href="#scaffolded" class="sub-link">5.3 Scaffolded instruction</a>
+    
+    <a href="#recommendations">6. Recommendations</a>
 
     <a href="#references"> <i>References </i></a>
     <!-- More links --> 
@@ -59,57 +72,74 @@
 
         <h2 class="section-header">Introduction</h2>
         <h4 class="sub-section-header" id="who"><b> 1.1 Who is a drop-out?</b></h4>
-    
+
             <p>A high school drop-out is a person who does not have a high school diploma and is not enrolled in school. 
-            Usually, people aged 20-24 are considered in the calculations of dropout rates in Canada. 
-            However, according to a report published by Statistics Canada, “almost all individuals who finish high school have likely done so by the age of 25” 
-            <a href="#ref1" class="reference-link">[1]</a>
-            . Therefore, on this website, drop-outs will be referred to as individuals aged 25 or older who do not have a high school diploma.
+                Usually, people aged 20-24 are considered in the calculations of dropout rates in Canada. 
+                However, according to a report produced by Sharanjit Uppal and published by Statistics Canada (2017), 
+                “almost all individuals who finish high school have likely done so by the age of 25.” 
+                Therefore, on this website, drop-outs will be referred to as individuals aged 25 or older who do not have a high school diploma.
         </p>
 
         <h4 class="sub-section-header" id="BC"><b> 1.2 Dropout in BC</b></h4>
+            <b> Figure 1</b>
+            <p><i>High school dropout rate in BC between 2018 and 2022.</i></p>
             <figure class="text-center">
-                <img src="Percentage_of_Canadian_dropouts_bar_chart_excel.png" alt="Placeholder Image" width="500" class="img-fluid mx-auto d-block table-borderless">
-                <figcaption style="font-style: italic;">Figure 1. Dropouts in BC <a href="#ref1" class="reference-link">[2] </a> </figcaption>
+                <img src="images/Percentage_of_Canadian_dropouts_bar_chart_excel.png" alt="Placeholder Image" width="500" class="img-fluid mx-auto d-block table-borderless">
+                <figcaption style="font-style: italic; font-size:small">Adapted from “Educational attainment of the population aged 25 to 64, by age group and sex, 
+                    Organisation for Economic Co-operation and Development (OECD), Canada, provinces and territories,” by Statistics Canada, 2023 
+                    (<a href="https://doi.org/10.25318/3710013001-eng">https://doi.org/10.25318/3710013001-eng</a>). Copyright 2023 by Kamran Ismayilov
+                </figcaption>
             </figure>
-            <p>Figure 1 demonstrates a positive, declining trend in high school dropout rates. 
-                In fact, the dropout rate in BC in 2022 was only 5 percent (Statistics Canada, 2022). 
+            <p>
+                Figure 1 demonstrates a positive, declining trend in high school dropout rates. 
+                In fact, the dropout rate in BC in 2022 was only 5 percent (Statistics Canada, 2023). 
                 However, given the fact that nearly 3 million people aged 25-64 lived in BC in 2022 ,this 5 percent represents almost 150,000 people (Statistics Canada, 2022). 
                 Therefore, the issue of high school dropout in BC is not nearly as negligible as it seems.
+                
             </p>
     </section>
 
     <section id="cost">
         <h2 class="section-header">The Cost of Quitting School</h2>
         <p>Reducing high school dropout rate in BC is essential because dropping out of high school entails negative individual and social consequences.
-
         </p>
 
         <h4 class="sub-section-header" id="lower-earnings"><b> 2.1 Lower earnings</b></h4>
+            <b> Figure 2</b>
+            <p><i>Earnings of Canadians aged between 25 and 64 by level of education, 2021.</i></p>
             <figure class="text-center">
-                <img src="Excel_Bar_Chart_earnings_with_currency.png" alt="Placeholder Image" width="500" class="img-fluid mx-auto d-block table-borderless">
-                <figcaption style="font-style: italic;">Figure 2. Annual Earnings of Canadians by Level of Education, 2021
-                    <a href="#ref1" class="reference-link">[3] </a> </figcaption>
+                <img src="images/Excel_Bar_Chart_earnings_with_currency.png" alt="Placeholder Image" width="500" class="img-fluid mx-auto d-block table-borderless">
+                <figcaption style="font-style: italic; font-size:small">
+                    Adapted from “Employment income statistics by occupation, major field of study and highest level of education: Canada,” by Statistics Canada, 2022 
+                    (<a href="https://doi.org/10.25318/9810041201-eng">https://doi.org/10.25318/9810041201-eng</a>). Copyright 2023 by Kamran Ismayilov
+                </figcaption>
             </figure>
-            <p>High school drop-outs are the lowest wage earners who live on the edge of, if not in, poverty.
-                 As illustrated in Figure 2, in 2021, high school dropouts aged 25-64 earned on average CA$8280 less than those with only a high school diploma. 
-                 This gap increases to CA$35160 compared to workers with a bachelor’s degree and to CA$48560 compared to those with a master’s degree. 
-                 Therefore, by dropping out of high school, people deprive themselves of a higher earning potential and a better quality of life. 
+            <p>High school drop-outs are the lowest wage earners who live on the edge of, if not in, poverty. 
+                As illustrated in Figure 2, in 2021, high school dropouts aged 25-64 earned on average CA$8280 less than those with only a high school diploma. 
+                This gap increases to CA$35160 compared to workers with a bachelor’s degree and to CA$48560 compared to those with a master’s degree. 
+                Therefore, by dropping out of high school, people deprive themselves of a higher earning potential and a better quality of life.
             </p>
 
         <h4 class="sub-section-header" id="crime"><b> 2.2 Increased crime rate</b></h4>
-        <figure class="text-center">
-            <img src="Excel_Project_Pie_Chart_Crime.png" alt="Placeholder Image" width="600" class="img-fluid mx-auto d-block table-borderless">
-            <figcaption style="font-style: italic;">Figure 3. Inmates in Federal Prisons of Canada by Level of Education, 2008-2013 <a href="#ref1" class="reference-link">[3] </a> </figcaption>
-        </figure>
-        <p>High school drop-outs are much more likely than graduates to live a life of crime. 
-            As illustrated in Figure 3, 75% of inmates in Canada did not have a high school diploma. 
-            By dropping out and turning to crime, people not only fail to fulfill their human potential, but also cause harm to their communities.
-        </p>
+            <b> Figure 3</b>
+            <p><i>Figure 3. Inmates in Federal Prisons of Canada by Level of Education, 2008-2013.</i></p>
+            <figure class="text-center">
+                <img src="images/Excel_Project_Pie_Chart_Crime.png" alt="Placeholder Image" width="600" class="img-fluid mx-auto d-block table-borderless">
+                <figcaption style="font-style: italic; font-size:small;">
+                    Adapted from “File # 394-2-78 Evaluation Report: Offender Education Programs and Services,” by Correctional Service Canada - Evaluation Division Policy Sector, 2015 
+                    (<a href="https://www.csc-scc.gc.ca/publications/092/005007-2014-eng.pdf">https://www.csc-scc.gc.ca/publications/092/005007-2014-eng.pdf</a>). Copyright 2023 by Kamran Ismayilov
+                </figcaption>
+            </figure>
+            <p>High school drop-outs are much more likely than graduates to live a life of crime. 
+                As illustrated in Figure 3, 75% of inmates in Canadian federal prisons did not have a high school diploma. 
+                By dropping out and turning to crime, people not only fail to fulfill their human potential, but also cause harm to their communities.
+
+            </p>
 
         <h4 class="sub-section-header" id="economy"><b> 2.3 Damage to Canadian Economy</b></h4>
-        <p>A report (2008) by Charity Intelligence Canada found that every year that produces drop-outs costs Canada CA$5.5 billion through “lost income, foregone taxes, and increased spending to address social problems” (p. 4). In 2023, this amount represents CA$7.6 billion.. 
-
+        <p>A report (2008) by Charity Intelligence Canada found that every year that produces drop-outs costs Canada CA$5.5 billion 
+            through “lost income, foregone taxes, and increased spending to address social problems” (p. 4). 
+            In 2023, this amount represents CA$7.6 billion.
         </p>
 
     </section >
@@ -121,34 +151,235 @@
         </h2>
 
         <p>
-            Understanding the reasons behind high school dropout in BC is essential for the creation and implementation of an effective dropout prevention plan. Unfortunately, there are no recent, comprehensive, long-term studies regarding the reasons for high school dropout conducted in BC specifically. However, studies conducted outside of BC provide a valuable insight into the causes of dropout. Rumberger (2012) analyzed a report of a national longitudinal study of dropouts conducted in the US and found that the causes of high school dropout include students’ behavior and performance, school factors such as classes not being interesting, and factors outside of school such as getting a job (p. 158). Thus, dropping out of school is the consequence of multiple factors, rather than just one.
-
+            Understanding the reasons behind high school dropout in BC is essential for the creation and implementation of an effective dropout prevention plan. 
+            Unfortunately, there are no recent, comprehensive, long-term studies regarding the reasons for high school dropout conducted in BC specifically. 
+            However, studies conducted outside of BC provide a valuable insight into the causes of dropout.
+             Rumberger (2012) analyzed a report of a national longitudinal study of dropouts conducted in the US and found that the causes of high school 
+             dropout include students’ behavior and performance, school factors such as classes not being interesting, and factors outside of school such as getting a job (p. 158). 
+             Thus, dropping out of school is the consequence of multiple factors, rather than just one.
         </p>
-
         <p>
-            The study by Dupéré et al. (2015) produced similar results and found that dropping out of school is the result of a combination of school-related, socio-economic, and other personal factors (p. 613). Figure 4 illustrates a model of causes of high school dropout created by Dupéré et al. 
+            The study by Dupéré et al. (2015) produced similar results and found that dropping out of school is the result of a combination of school-related, socio-economic, 
+            and other personal factors (p. 613). Figure 4 illustrates a model of causes of high school dropout created by Dupéré et al. 
+        </p>
+        <b>Figure 4</b>
+        <p><i>A stress process, life course model of high school dropout.</i></p>
+        <figure class="text-center">
+                <img src="images\stresses.png" alt="Placeholder Image" width="600" class="img-fluid mx-auto d-block table-borderless">
+                <figcaption style="font-style: italic; font-size:small;">
+                    From “Stressors and Turning Points in High School and Dropout: A Stress Process, Life Course Framework,” 
+                    by V. Dupéré, T. Leventhal, E. Dion, R. Crosnoe, I. Archambault, and M. Janosz, 2015, Review of Educational Research, 85(4), p. 613 
+                    (<a href="https://doi.org/10.3102/0034654314559845">https://doi.org/10.3102/0034654314559845</a>). Copyright 2014 by AERA  
 
+                </figcaption>
+        </figure>
+        <p>The results of these studies can, with due caution, be applied to the context of BC.
         </p>
 
+        <h4 class="sub-section-header" id="learning-needs"><b> 3.1 Learning needs and dropout</b></h4>
+        <p>Learning needs are a school-related factor affecting high school students’ decision to drop out. 
+            Learning needs are defined as the gap between a learner’s current level of knowledge and the level of knowledge needed to complete tasks (Mehay, n.d.). 
+            In the high school context, learning needs are the knowledge gaps that prevent students from achieving learning outcomes, doing well on tests, 
+            and succeeding academically. As demonstrated in Table 5, there are four types of learning needs: open, blind, hidden, and unknown (Thampy, 2013, p. 138). 
+        </p>
 
-
+        <b>Figure 5</b>
+        <p><i>Types of learning needs.</i></p>
+        <figure class="text-center">
+                <img src="images\types.png" alt="Placeholder Image" width="600" class="img-fluid mx-auto d-block table-borderless">
+                <figcaption style="font-style: italic; font-size:small;">
+                    From “How to … Identify learning needs,” by H. Thampy, 2013, Education for Primary Care, 24(2), p. 138 (<a href="https://doi.org/10.1080/14739879.2013.11493468">https://doi.org/10.1080/14739879.2013.11493468</a>). Copyright 2013 by Radcliffe Publishing Limited.
+                </figcaption>
+        </figure>
+        <p>Unaddressed learning needs lead to poor grades. 
+            Duncan et al. found that poor grades, in turn, lead to depression and lower overall mental well-being (2021, p. 349). 
+            As a result, students lose motivation, start skipping school, and ultimately drop out. 
+            In fact, in the report produced in the US by Dalton et al., 44 percent of high school students reported dropping out due to missing too many school days, 
+            and 38 percent reported poor grades as the reason for dropping out (2009, p. 22). 
+            The results of the report show that effectively addressing learning needs may reduce high school dropout rates by at least 30 percent. 
+            These results can, with due caution, be applied to BC.
+        </p>
 
     </section>
 
+
+    <section id="identification">
+        <h2 class="section-header" id="identification">Identifying learning needs</h2>
+
+        <h4 class="sub-section-header" id="assessment"><b> 4.1 Self-assessment</b></h4>
+        <p>Identification of learning needs is the first step towards the resolution of the needs. 
+            High school students can identify their own learning needs through self-assessment. 
+            An effective self-assessment strategy involves concrete experience, reflective observation, abstract conceptualization, and active experimentation (Thampy, 2013, p. 139). 
+            Figure 6 demonstrates a model of self-assessment of learning needs. 
+        </p>
+
+        <b>Figure 6</b>
+        <p><i>Model of self-assessment of learning needs.</i></p>
+        <figure class="text-center">
+                <img src="images\assestment.png" alt="Placeholder Image" width="600" class="img-fluid mx-auto d-block table-borderless">
+                <figcaption style="font-style: italic; font-size:small;">
+                    From “How to … Identify learning needs,” by H. Thampy, 2013, Education for Primary Care, 24(2), p. 139 
+                    (<a href="https://doi.org/10.1080/14739879.2013.11493468">https://doi.org/10.1080/14739879.2013.11493468</a>). Copyright 2013 by Radcliffe Publishing Limited.
+  
+                </figcaption>
+        </figure>
+
+        <h4 class="sub-section-header" id="identification"><b> 4.2 Identification by teachers</b></h4>
+        <p>Even if the students know their own learning needs, their teachers also need to get an understanding of their needs to generate an effective teaching plan.
+        </p>
+
+        <p>Teachers can identify the perceived needs of their students by conducting surveys, interviews, and questionnaires (McGill University, 2018). 
+        In this way, teachers can get an understanding of knowledge gaps already known to their students. 
+        In a survey conducted by the government of British Columbia in school year 2022/23, 17 percent of students in grade 10, and 18 percent of students in grade 12 reported that they provided no input into what they learn and how they learn. 
+        Thus, it is reasonable to imply that high school teachers in BC did not know about the perceived learning needs of close to 20% of their students. 
+        Bridging the communication gap between high school teachers and students in BC is essential for establishing a more efficient learning environment.
+        </p>
+
+        <p>High school teachers in BC can also identify the needs unknown to their students by conducting knowledge tests in different forms (McGill University, 2018). 
+        According to the BC Curriculum, high school teachers conduct “formative assessments” to document the progress of their students (British Columbia Ministry of Education, n.d., p. 1). Therefore, it is reasonable to assume that high school teachers in BC effectively identify the needs unknown to their students.
+        </p>
+
+    </section>
+
+    <section id="addressing">
+        <h2 class="section-header">Addressing learning needs</h2>
+
+        <h4 class="sub-section-header" id="universal-design"><b> 5.1 Universal Design</b></h4>
+        <p>The addressing of learning needs is the most important step in closing the knowledge gaps of high school students and reducing dropout rates. 
+            High school teachers in BC can address the needs of their students by implementing a universal design 
+            and thus creating a learning environment that helps meet the needs of all students in the classroom through the consideration of the students’ needs and interests 
+            (Manitoba Education, Citizenship, and Youth, 2006, p.8). 
+            This approach is likely to prevent learning needs from persisting in the long term and negatively affecting students’ academic performance. 
+            If the learning needs of some students remain unaddressed by universal design, teachers can use differentiated instruction and scaffolded instruction.
+
+        </p>
+
+        <h4 class="sub-section-header" id="differentiated-instruction"><b> 5.2 Differentiated Instruction</b></h4>
+        <p>Differentiated instruction involves the use of different instructional strategies and offers multiple options 
+            at each stage of the learning process to help a student succeed academically (Manitoba Education and Advanced Learning, 2015, p. 10). 
+            A study by Pablico, Diack, and Lawson (2017) found that differentiated instruction improves student engagement and academic performance (p. 50). 
+
+        </p>
+
+        <h4 class="sub-section-header" id="scaffolded"><b> 5.3 Scaffolded instruction</b></h4>
+        <p>With the use of scaffolded instruction, high school teachers in BC can provide explicit and organized instruction to support students’ transition 
+            from the current knowledge level to a more advanced one (Manitoba Education and Advanced Learning, 2015, p. 20). 
+            A study by van de Pol et al. found that even though scaffolding is not unequivocally effective, it can lead to increased student motivation and achievement (2015, p. 632).
+        </p> 
+
+    </section>
+
+    <section id="recommendations">
+        <h2 class="section-header">Recommendations</h2>
+        <p>
+            The efficiency of instructional techniques such as scaffolding and differentiated instruction in the high school context 
+            is largely unknown due to the lack of relevant studies. 
+            Nevertheless, the existing studies highlight the efficiency of these strategies. 
+            Therefore, the government of BC should include these strategies into the high school curriculum as methods that high school teachers 
+            should use to assist students with protracted learning needs. The inclusion of scaffolding and differentiated instruction will 
+            provide high school teachers in BC with tools to deal with the learning needs of their students and thus reduce high school dropout rates in BC. 
+        </p>
+    </section>
     
 
     <section id="references">
         <h2>References</h2>
         <ol>
-            <li id="ref1"> https://www150.statcan.gc.ca/n1/pub/75-006-x/2017001/article/14824-eng.html</li>
-            <li id="ref2">Reference 2 details...</li>
-            <!-- More references -->
+            <li> British Columbia Ministry of Education (n.d.). <i>A Framework for Classroom Assessment.</i> 
+                <a href="https://curriculum.gov.bc.ca/sites/curriculum.gov.bc.ca/files/pdf/assessment/a-framework-for-classroom-assessment.pdf">
+                    https://curriculum.gov.bc.ca/sites/curriculum.gov.bc.ca/files/pdf/assessment/a-framework-for-classroom-assessment.pdf
+                </a>
+            </li>
+
+            <li>Charity Intelligence Canada (2008). <i>Breaking the Cycle of Failure: A Funder’s Primer in Understanding Canada’s School Drop-Out Epidemic.</i>
+                <a href="https://www.charityintelligence.ca/images/Ci_EducationReport_08.pdf">
+                    https://www.charityintelligence.ca/images/Ci_EducationReport_08.pdf
+                </a>
+            </li>
+
+            <!-- Continue adding references in the same format -->
+            <li>Correctional Service Canada – Evaluation Division Policy Sector (2015). <i>File # 394-2-78 Evaluation Report: Offender Education Programs and Services. </i>
+                <a href="https://www.csc-scc.gc.ca/publications/092/005007-2014-eng.pdf">
+                    https://www.csc-scc.gc.ca/publications/092/005007-2014-eng.pdf
+                </a>
+            </li>
+
+            <li>Dalton, B., Glennie, E., & Ingels, S. J. (2009). <i>Late High School Dropouts: Characteristics, Experiences, and Changes Across Cohorts (NCES 2009-307).</i> National Center for Education Statistics, Institute of Education Sciences, U.S. Department of Education. 
+                <a href="https://nces.ed.gov/pubs2009/2009307.pdf">
+                    https://nces.ed.gov/pubs2009/2009307.pdf
+                </a>
+            </li>
+
+            <li>Duncan, M., Patte, K., & Leatherdale, S. (2021). Mental Health Associations with Academic Performance and Education Behaviors in Canadian Secondary School Students. 
+                <i>Canadian Journal of School Psychology, 36(4)</i>, 335-357. 
+                <a href="https://doi.org/10.1177/0829573521997311">https://doi.org/10.1177/0829573521997311</a>
+            </li>
+
+            <li>Dupéré, V., Leventhal, T., Dion, E., Crosnoe, R., Archambault, I., & Janosz, M. (2015). 
+                Stressors and Turning Points in High School and Dropout: A Stress Process, Life Course Framework. 
+                <i>Review of Educational Research, 85(4)</i>, 591-629. 
+                <a href="https://doi.org/10.3102/0034654314559845">https://doi.org/10.3102/0034654314559845</a>
+            </li>
+
+            <li>Government of British Columbia – Education Analytics Office (2023). <i>Student Learning Survey 2020/21 – 2022/23.</i> 
+                <a href="https://catalogue.data.gov.bc.ca/dataset/6fe496cb-d2b9-4d25-9dec-02fbb1355c3e/resource/604e68c8-b8cc-4fd1-865d-afdf4e2454d5/download/student_learning_survey-2020-2021_to_2022-2023.xlsx">https://catalogue.data.gov.bc.ca/dataset/6fe496cb-d2b9-4d25-9dec-02fbb1355c3e/resource/604e68c8-b8cc-4fd1-865d-afdf4e2454d5/download/student_learning_survey-2020-2021_to_2022-2023.xlsx</a>
+            </li>
+
+            <li>Manitoba Education and Advanced Learning (2015). Module 2: Addressing the needs of students with learning disabilities. 
+                <i>Supporting inclusive schools: addressing the needs of students with learning disabilities.</i>
+                <a href="https://www.edu.gov.mb.ca/k12/docs/support/learn_disabilities/module2.pdf">https://www.edu.gov.mb.ca/k12/docs/support/learn_disabilities/module2.pdf</a>
+            </li>
+
+            <li>Manitoba Education, Citizenship, and Youth (2006). 
+                <i>Rethinking Classroom Assessment with Purpose in Mind: Assessment for Learning, Assessment as Learning, Assessment of Learning. </i>
+                <a href="https://www.edu.gov.mb.ca/k12/assess/wncp/full_doc.pdf">https://www.edu.gov.mb.ca/k12/assess/wncp/full_doc.pdf</a>
+            </li>
+
+            <li>McGill University – Faculty of Medicine (2018). <i>Quick Tips for Conducting a Needs Assessment. </i>
+                <a href="https://www.mcgill.ca/medicinecpd/files/medicinecpd/2020-05_conducting_needs_assessment_en.pdf">https://www.mcgill.ca/medicinecpd/files/medicinecpd/2020-05_conducting_needs_assessment_en.pdf</a>
+            </li>
+
+            <li>Mehay, R. (n.d.). <i>Teaching & Learning: Learning Needs. Bradford VTS.</i> 
+                <a href="https://www.bradfordvts.co.uk/teaching-learning/learning-needs/">https://www.bradfordvts.co.uk/teaching-learning/learning-needs/</a>
+            </li>
+
+            <li>Pablico, J.R., Diack, M., & Lawson, A.H. (2017). 
+                Differentiated Instruction in the High School Science Classroom: Qualitative and Quantitative Analyses. 
+                <i>Teaching & Learning: Learning Needs. Bradford VTS.</i>, 30-54. 
+                <a href="https://ijlter.myres.net/index.php/ijlter/article/view/801/806">https://ijlter.myres.net/index.php/ijlter/article/view/801/806</a>
+            </li>
+
+            <li>Rumberger, R. W. (2012). <i>Dropping out: Why students drop out of high school and what can be done about it (1st ed.).</i> 
+                Harvard University Press. <a href="https://doi.org/10.4159/harvard.9780674063167">https://doi.org/10.4159/harvard.9780674063167</a>
+            </li>
+
+            <li>Statistics Canada (2022). <i>Employment income statistics by occupation, major field of study and highest level of education: Canada.</i> 
+                <a href="https://doi.org/10.25318/9810041201-eng">https://doi.org/10.25318/9810041201-eng</a>
+            </li>
+
+            <li>Statistics Canada (2022). <i>Population Estimates on July 1st, by age and sex. </i>
+                <a href="https://doi.org/10.25318/1710000501-eng">https://doi.org/10.25318/1710000501-eng</a>
+            </li>
+
+            <li>Statistics Canada (2023). 
+                <i>Educational attainment of the population aged 25 to 64, by age group and sex, Organisation for Economic Co-operation and Development (OECD), Canada, provinces and territories. </i>
+                <a href="https://doi.org/10.25318/3710013001-eng">https://doi.org/10.25318/3710013001-eng</a>
+            </li>
+
+            <li>Thampy, H. (2013). How to… Identify learning needs. <i>Education for Primary Care, 24(2)</i>, 138-140. 
+                <a href="https://doi.org/10.1080/14739879.2013.11493468">https://doi.org/10.1080/14739879.2013.11493468</a>
+            </li>
+
+            <li>Uppal, Sharanjit (2017). <i>Young Men and Women without a High School Diploma. Statistics Canada.</i> 
+                <a href="https://www150.statcan.gc.ca/n1/pub/75-006-x/2017001/article/14824-eng.htm#shr-pg0">https://www150.statcan.gc.ca/n1/pub/75-006-x/2017001/article/14824-eng.htm#shr-pg0</a>
+            </li>
+
+            <li>Van de Pol, J., Volman, M., Oort, F., & Beishuizen, J. (2015). The effects of scaffolding in the classroom: support contingency and student independent working time in relation to student achievement, task effort and appreciation of support. Instructional Science, 43(5), 615-641. 
+                <a href="https://doi.org/10.1007/s11251-015-9351-z">https://doi.org/10.1007/s11251-015-9351-z</a>
+            </li>
+
         </ol>
     </section>
-
-
-    <!-- Additional sections with styled headers -->
-    <!-- Add more content sections here -->
 
 </div>
 
@@ -191,8 +422,16 @@
     
     // Call this function on window load to set the initial state
     window.onload = function() {
-        toggleNav(); // This will close the sidebar when the page loads
-    }    
+        var sidebar = document.getElementsByClassName("sidebar")[0];
+        var closeBtn = document.getElementsByClassName("close-btn")[0];
+        var toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+
+        // Close the sidebar
+        sidebar.style.width = "0";
+        document.body.style.paddingLeft = "0";
+        closeBtn.style.display = "none"; // Hide the close button
+        toggleBtn.style.display = "block"; // Show the toggle button
+    }       
 </script>
 
 </body>

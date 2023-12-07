@@ -23,12 +23,20 @@ body {
     top: 0;
 }
 .title-page img {
-    max-width: 100%; /* Responsive image size */
+    max-width: 100%; /* Responsive image size */ 
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto 2em; /* Center horizontally */
 }
+.title-page img.university-logo {
+    width: 200px; /* Smaller width for the logo */
+    position: absolute;
+    right: 20px; /* Adjust as needed, 20px from the right */
+    top: 20px; /* Adjust as needed, 20px from the top */
+}
+
+
 .title {
-    font-size: 2em; /* Title text size */
+    font-size: 2.5em; /* Title text size */
     margin: 0.5em 0; /* Margin above and below the title */
 }
 .author, .institution {
@@ -134,7 +142,7 @@ body {
 }
 
 #references li {
-    padding-bottom: 5px; /* Space between reference items */
+    padding-bottom: 15px; /* Space between reference items */
 }
 
 /* Additional CSS for clickable reference links within the content */
